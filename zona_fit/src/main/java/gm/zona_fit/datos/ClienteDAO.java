@@ -1,8 +1,6 @@
 package gm.zona_fit.datos;
 
-import gm.zona_fit.conexion.Conexion;
 import gm.zona_fit.dominio.Cliente;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -152,7 +150,7 @@ public class ClienteDAO implements IClienteDAO {
 
     public static void main(String[] args) {
 //        //Listar clientes
-        IClienteDAO clienteDAO = new ClienteDAO();
+//        IClienteDAO clienteDAO = new ClienteDAO();
 //
 //        System.out.println("+++ listar clientes +++");
 //        var clientes = clienteDAO.listarClientes();
@@ -196,18 +194,18 @@ public class ClienteDAO implements IClienteDAO {
 //        var clientes3 = clienteDAO.listarClientes();
 //        clientes2.forEach(System.out::println);
 
-        //Eliminar cliente
-        System.out.println("\n+++ eliminar cliente +++");
-        var clienteEliminar = new Cliente(14);
-        var eliminado = clienteDAO.eliminarCiente(clienteEliminar);
-        if (eliminado)
-            System.out.println("cliente eliminado: " + clienteEliminar);
-        else
-            System.out.println("No se modifico cliente: " + clienteEliminar);
-
-        // Listar clientes
-        System.out.println("\n+++ listar clientes +++");
-        var clientes4 = clienteDAO.listarClientes();
-        clientes4.forEach(System.out::println);
+//        //Eliminar cliente
+//        System.out.println("\n+++ eliminar cliente +++");
+//        var clienteEliminar = new Cliente(14);
+//        var eliminado = clienteDAO.eliminarCiente(clienteEliminar);
+//        if (eliminado)
+//            System.out.println("cliente eliminado: " + clienteEliminar);
+//        else
+//            System.out.println("No se modifico cliente: " + clienteEliminar);
+//
+//        // Listar clientes
+//        System.out.println("\n+++ listar clientes +++");
+//        var clientes4 = clienteDAO.listarClientes();
+//        clientes4.forEach(System.out::println);
     }
 }
